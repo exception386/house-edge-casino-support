@@ -1,0 +1,98 @@
+name: 🐞 Bug Report
+description: Report something that isn’t working correctly
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug in House Edge Casino 🎰  
+        Please fill out the details below so we can reproduce and fix it quickly.
+
+  - type: input
+    id: summary
+    attributes:
+      label: What happened?
+      description: Briefly describe the issue
+      placeholder: The app crashed after spinning the slots
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Tell us exactly how to recreate the issue
+      placeholder: |
+        1. Open the app
+        2. Go to Slots
+        3. Spin 3 times
+        4. App crashes
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: The spin should complete normally
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened?
+      placeholder: The app froze and then closed
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does this happen?
+      options:
+        - Every time
+        - Often
+        - Sometimes
+        - Rarely
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      placeholder: iPhone 13 Pro, iPad Air, etc.
+    validations:
+      required: true
+
+  - type: input
+    id: ios_version
+    attributes:
+      label: iOS Version
+      placeholder: iOS 17.3
+    validations:
+      required: true
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App Version
+      placeholder: 1.0.2
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or screen recording
+      description: Drag and drop images or videos here if helpful
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Anything else that might help us diagnose the issue
